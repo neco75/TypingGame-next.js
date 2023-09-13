@@ -53,7 +53,7 @@ const TypingGame: React.FC = () => {
       if (userInput === word) {
         document.getElementById("text")!.style.backgroundColor = "white";
         setScore(score + 10);
-        setTime(time + 2);
+        setTime(Math.min(time + 2, 30));
         generateNewWord();
       } else if (userInput.length >= word.length) {
         document.getElementById("text")!.style.backgroundColor = "pink";
