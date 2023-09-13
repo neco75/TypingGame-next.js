@@ -1,0 +1,73 @@
+
+
+#__next {
+    background-position: center center;
+    padding: 2rem;
+    /* 中央配置 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game{
+    /* 背景色 */
+    background-color: #fff;
+    /* 透過 */
+    opacity: 0.8;
+    /* 丸み */
+    border-radius: 10px;
+    /* ボックスシャドウ */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* パディング */
+    padding: 2rem;
+    /* 幅 */
+    width: 100%;
+    /* 最大幅 */
+    max-width: 800px;
+    /* 高さ */
+    height: 100%;
+    /* 最大高さ */
+    max-height: 600px;
+    /* フレックス */
+    display: flex;
+    /* カラム */
+    flex-direction: column;
+    /* 中央配置 */
+    justify-content: center;
+    align-items: center;
+}
+
+#text{
+    /* フォントサイズ */
+    font-size: 2rem;
+    /* フォントウェイト */
+    font-weight: bold;
+    /* テキストアライン */
+    text-align: center;
+    /* マージン */
+    margin-bottom: 2rem;
+    /* 角丸 */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+#reset{
+    /* フォントサイズ */
+    font-size: 1rem;
+    /* フォントウェイト */
+    font-weight: bold;
+    /* テキストアライン */
+    text-align: center;
+    /* マージン */
+    margin-bottom: 2rem;
+    /* 角丸 */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* パディング */
+    padding: 0.5rem 1rem;
+    /* カーソル */
+    cursor: pointer;
+    /* ボックスシャドウ */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

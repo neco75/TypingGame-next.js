@@ -13,7 +13,6 @@ const TypingGame: React.FC = () => {
     generateNewWord();
   }, []);
 
-  // タイマーのカウントダウン
   useEffect(() => {
     let timer: NodeJS.Timeout;
 
@@ -22,7 +21,7 @@ const TypingGame: React.FC = () => {
         setTime(time - 1);
       }, 1000);
     } else if ((time === 0 || missCount >= 5) && !gameOver) {
-      // タイムアップまたはmissCountが5以上の場合の処理
+
       setGameOver(true);
       alert("Game Over");
     }
@@ -59,22 +58,21 @@ const TypingGame: React.FC = () => {
       } else if (userInput.length >= word.length) {
         document.getElementById("text")!.style.backgroundColor = "pink";
         setInput('');
-        setScore(Math.max(score - 1, 0)); // スコアが負の数にならないようにする
+        setScore(Math.max(score - 1, 0));
         setMissCount(missCount + 1);
 
         if (missCount + 1 >= 5) {
-          // missCountが5以上になった場合の処理
           setGameOver(true);
           alert("Game Over");
         }
 
-        setTime(Math.max(time - 3, 0)); // タイムが負の数にならないようにする
+        setTime(Math.max(time - 3, 0));
       }
     }
   };
 
   return (
-    <div>
+    <div id='game'>
       <h1>Typing Game</h1>
       <p>Time: {time}</p>
       <p>Score: {score}</p>
