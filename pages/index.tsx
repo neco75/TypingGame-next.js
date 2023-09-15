@@ -5,7 +5,7 @@ import Contact from '../components/contact';
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <div className=' mx-96'>
       <Rule />
       <Contact />
       <TypingGame />

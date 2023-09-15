@@ -1,4 +1,6 @@
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 #__next {
     background-position: center center;
@@ -9,7 +11,7 @@
     align-items: center;
 }
 
-#game{
+.game{
     /* 背景色 */
     background-color: #fff;
     /* 透過 */

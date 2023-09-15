@@ -72,14 +72,17 @@ const TypingGame: React.FC = () => {
   };
 
   return (
-    <div id='game'>
-      <h1>Typing Game</h1>
-      <p>Time: {time}</p>
-      <p>Score: {score}</p>
-      <p>MissCount: {missCount}</p>
-      <h2>Word: {word}</h2>
-      <input id="text" type="text" value={input} onChange={handleInputChange} />
-      <input id="reset" type="button" value="Reset" onClick={reset} />
+    <div className='game m-3'>
+      <h1 className=' m-4 text-4xl'>Typing Game</h1>
+      <div className="text-base  dark:text-white">Time : {time}</div>
+      <div className="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
+        <div className="bg-blue-600 h-2.5 rounded-full dark:bg-blue-500" style={{ width: `${time * 3.33}%` }}></div>
+      </div>
+      <p className='m-1'>Score : {score}</p>
+      <p className='m-1'>MissCount : {missCount}</p>
+      <h2 className='m-1 text-3xl'>Word : {word}</h2>
+      <input id="text" className='m-1' type="text" value={input} onChange={handleInputChange} />
+      <input id="reset" className='m-1' type="button" value="Reset" onClick={reset} />
     </div>
   );
 };
